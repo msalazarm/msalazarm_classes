@@ -1,0 +1,136 @@
+Name: Marco Salazar
+Date: 2/28/2018
+Aggie ID: 800644204
+Class: CS271 lab5 Task2 Test Results
+
+I tested removing and added, even with empty lists.
+
+marco@LAPTOP-C429ETO6:/mnt/c/Linux/cs271/hw5$ ./a.out
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 1
+Enter a character: d
+The list is:
+d --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 1
+Enter a character: u
+The list is:
+d --> u --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2
+Enter character to be deleted: k
+k not found.
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 1
+Enter a character: a
+The list is:
+a --> d --> u --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2
+Enter character to be deleted: d
+d deleted.
+The list is:
+a --> u --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 1
+Enter a character: d
+The list is:
+a --> d --> u --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 3
+End of run.
+marco@LAPTOP-C429ETO6:/mnt/c/Linux/cs271/hw5$ ./a.out
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2
+Enter character to be deleted: 1
+List is empty.
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 1
+Enter a character: 5
+The list is:
+5 --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 1
+Enter a character: {
+The list is:
+5 --> { --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2
+Enter character to be deleted: }
+} not found.
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2{
+Enter character to be deleted: { deleted.
+The list is:
+5 --> NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2
+Enter character to be deleted: 5
+5 deleted.
+The list is:
+NULL
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 2
+Enter character to be deleted: f
+List is empty.
+
+Enter your choice:
+   1 to insert an element into the list.
+   2 to delete an element from the list.
+   3 to end.
+? 3
+End of run.
