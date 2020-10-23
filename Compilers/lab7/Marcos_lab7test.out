@@ -1,0 +1,133 @@
+marco@DESKTOP-625N2SQ:/mnt/c/schoollinux/cs370/lab7$ ./lab7 < lab7test.al
+
+        LABEL           Offset   LEVEL          Type            IsaFunc         mysize
+        x               2               2               0               2               10
+        y               1               1               0               0               1
+        b               0               1               0               0               1
+        f               0               0               0               1               0
+        y               100             0               0               0               1
+        Z               0               0               0               2               100
+
+        LABEL           Offset   LEVEL          Type            IsaFunc         mysize
+        x               2               2               0               2               10
+        y               1               1               0               0               1
+        b               0               1               0               0               1
+        f               0               0               0               1               0
+        y               100             0               0               0               1
+        Z               0               0               0               2               100
+
+        LABEL           Offset   LEVEL          Type            IsaFunc         mysize
+        y               1               1               0               0               1
+        b               0               1               0               0               1
+        f               0               0               0               1               0
+        y               100             0               0               0               1
+        Z               0               0               0               2               100
+
+        LABEL           Offset   LEVEL          Type            IsaFunc         mysize
+        arg2            1               1               0               2               1
+        arg1            0               1               0               0               1
+        main            0               0               0               1               0
+        z               101             0               0               0               1
+        f               0               0               0               1               12
+        y               100             0               0               0               1
+        Z               0               0               0               2               100
+
+Main symbol table START
+
+        LABEL           Offset   LEVEL          Type            IsaFunc         mysize
+        main            0               0               0               1               2
+        z               101             0               0               0               1
+        f               0               0               0               1               12
+        y               100             0               0               0               1
+        Z               0               0               0               2               100
+Variable INT y has offset 100
+Variable INT Z[100] has offset 0
+INT FUNCTION f
+ max offset 12 (
+ Paramater INT  b
+ )
+ BLOCK STATMENT
+  Variable INT y has offset 1
+  BLOCK STATMENT
+   Variable INT x[10] has offset 2
+   Assignment STATMENT
+    IDENTIFIER x
+     Array Reference [
+      EXPR -
+       EXPR +
+        Number with value 2
+        Number with value 3
+       Number with value 5
+     ] end of array
+    EXPR +
+     IDENTIFIER b
+     CALL FUNCTION f
+      ARG
+       EXPR +
+        Number with value 5
+        EXPR *
+         IDENTIFIER x
+          Array Reference [
+           Number with value 2
+          ] end of array
+         IDENTIFIER b
+  BLOCK STATMENT
+   Variable INT x[10] has offset 2
+   Assignment STATMENT
+    IDENTIFIER x
+     Array Reference [
+      EXPR -
+       EXPR +
+        Number with value 2
+        Number with value 3
+       Number with value 5
+     ] end of array
+    EXPR +
+     IDENTIFIER b
+     CALL FUNCTION f
+      ARG
+       EXPR +
+        Number with value 5
+        EXPR *
+         IDENTIFIER x
+          Array Reference [
+           Number with value 2
+          ] end of array
+         IDENTIFIER b
+Variable INT z has offset 101
+INT FUNCTION main
+ max offset 2 (
+ Paramater INT  arg1
+ Paramater INT  arg2[]
+ )
+ BLOCK STATMENT
+  WRITE STATMENT
+   CALL FUNCTION f
+    ARG
+     EXPR +
+      EXPR -
+       EXPR +
+        IDENTIFIER arg1
+        IDENTIFIER arg2
+         Array Reference [
+          EXPR +
+           Number with value 3
+           Number with value 5
+         ] end of array
+       IDENTIFIER z
+      IDENTIFIER y
+  WRITE STATMENT
+   CALL FUNCTION f
+    ARG
+     EXPR +
+      EXPR -
+       EXPR +
+        IDENTIFIER arg1
+        IDENTIFIER arg2
+         Array Reference [
+          EXPR +
+           Number with value 3
+           Number with value 5
+         ] end of array
+       IDENTIFIER z
+      IDENTIFIER y

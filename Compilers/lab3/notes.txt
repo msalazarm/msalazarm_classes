@@ -1,0 +1,12 @@
+/* %{ tells lex that this should be interpreted as C. it is global code
+   %% this is used to tell lex that this is lex code.
+   
+   After this is the support C code. yylex() is a function that lex makes for us. At EOF(end of file) it will run yywrap().
+
+	lex "file"
+	gcc lex.yy.c
+	./a.out
+	
+   {} should be used after the regular expression to give the possiblity of multiple commands.
+	
+*/

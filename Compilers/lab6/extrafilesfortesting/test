@@ -1,0 +1,42 @@
+int x, A[100];
+int y, B[200];
+int main(void)
+  begin
+    int a, b[300];
+    write 5;
+    read a;
+    return 1;
+  end
+boolean one(int z)
+ begin
+    read b[300];
+    ;
+    return 1;
+ end
+void maid(int x, int y[])
+  begin
+    while 5 do 
+      begin
+        r = 3;
+      end
+    if 1
+    then b = 3; 
+    else b = 4;
+    return;
+  end
+void final(void)
+ begin
+  3 + 5;
+  4 > 7;
+  5 * (7 / 3);
+ end
+void hi(void)
+ begin
+  true;
+  false;
+  not true;
+  a;
+  hello();
+  world(a, b);
+ end
+
